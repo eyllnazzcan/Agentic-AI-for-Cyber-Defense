@@ -1,0 +1,470 @@
+[
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {
+      "hardware_protection": "documented",
+      "media_protection": "procedures_exist",
+      "audit_record": "present",
+      "repository_status": "updated"
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "PASS",
+      "used_evidence": [
+        "hardware_protection",
+        "media_protection",
+        "audit_record",
+        "repository_status"
+      ],
+      "explanation": "The evidence provided shows that both hardware and media protection procedures are documented, an audit record is present, and the repository status is updated, which directly supports the implementation of the CISP's Hardware and Media protection procedures as per the control PHM1-1.",
+      "remediation": "",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {
+      "audit_record": "missing_policy_documentation",
+      "repository_record": "incomplete_procedures",
+      "inventory": "unmarked_hardware_devices",
+      "review_log": "no_audit_of_media_protection"
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "audit_record",
+        "repository_record",
+        "inventory",
+        "review_log"
+      ],
+      "explanation": "The evidence provided indicates that there is missing policy documentation (audit_record), incomplete procedures (repository_record), unmarked hardware devices (inventory), and no audit of media protection (review_log). These findings directly contradict the control PHM1-1, which requires documented Hardware and Media protection procedures. The lack of documentation, incomplete procedures, unmarked hardware, and no audit of media protection all suggest that the control is not implemented.",
+      "remediation": "Develop and document comprehensive Hardware and Media protection procedures. Ensure all hardware devices are properly marked and inventoried. Conduct regular audits of media protection to verify compliance with the documented procedures.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the CISP has documented Hardware and Media protection procedures as required by the control PHM1-1.",
+      "remediation": "Review the CISP documentation to ensure that Hardware and Media protection procedures are clearly documented and accessible.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {
+      "audit_record": "documented",
+      "repository_status": "active",
+      "inventory_count": "1",
+      "review_log_entry": "included"
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "PASS",
+      "used_evidence": [
+        "audit_record",
+        "repository_status",
+        "inventory_count",
+        "review_log_entry"
+      ],
+      "explanation": "The evidence provided shows that the CISP has documented Software protection procedures (audit_record: 'documented'), the repository status is active (repository_status: 'active'), there is an inventory count (inventory_count: '1'), and a review log entry is included (review_log_entry: 'included'). All these points directly support the implementation of the control PSW1-1.",
+      "remediation": "",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {
+      "contradict_control": false,
+      "missing_procedures": true,
+      "incomplete_documentation": true,
+      "outdated_policy": false
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "missing_procedures",
+        "incomplete_documentation"
+      ],
+      "explanation": "The evidence indicates that there are missing procedures and incomplete documentation, which directly contradicts the requirement for the CISP to have documented Software protection procedures as per Control ID: PSW1-1.",
+      "remediation": "Review and update the Software protection procedures documentation to ensure completeness and accuracy. Conduct a gap analysis to identify and document all necessary procedures.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the CISP has documented Software protection procedures as required by the control PSW1-1.",
+      "remediation": "Review the CISP documentation to ensure that Software protection procedures are documented and comply with PSW1-1.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {
+      "cm1_1": "Configuration_management_procedures_documented",
+      "emergency_changes_handled": true,
+      "change_request_process_exists": true
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "PASS",
+      "used_evidence": [
+        "cm1_1",
+        "emergency_changes_handled",
+        "change_request_process_exists"
+      ],
+      "explanation": "The evidence provided directly supports the implementation of the CISP's Configuration Management procedures, including the handling of emergency changes, as documented in the evidence field 'cm1_1'. The existence of a change request process, as indicated by 'change_request_process_exists', further confirms the control's implementation.",
+      "remediation": "",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {
+      "audit_record": "no_documentation_found",
+      "repository_record": "missing_config_management_procedures",
+      "inventory": "no_active_changes_handled",
+      "review_log": "emergency_changes_not_logged"
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "audit_record",
+        "repository_record",
+        "inventory",
+        "review_log"
+      ],
+      "explanation": "The evidence provided indicates that there is no documentation found for Configuration Management procedures (audit_record), missing Configuration Management procedures (repository_record), no active changes are being handled (inventory), and emergency changes are not being logged (review_log). These points directly contradict the requirement of the CISP to document Configuration Management procedures, including handling of emergency changes, as stated in the control description.",
+      "remediation": "Implement a comprehensive Configuration Management procedure that includes documentation, handling of active changes, and logging of emergency changes. Ensure that all changes are reviewed and approved before implementation. Regularly audit and update the Configuration Management procedures to maintain compliance.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the CISP has documented Configuration Management procedures including handling of emergency changes. Without evidence, it is impossible to conclude if the control is implemented.",
+      "remediation": "Review and document Configuration Management procedures, including emergency change handling, to ensure compliance with CM1-1.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {
+      "continuity_planning_procedure_exists": true,
+      "procedure_documented": false,
+      "planning_frequency": "annually",
+      "procedure_updated_last_year": true
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "continuity_planning_procedure_exists",
+        "procedure_documented",
+        "planning_frequency",
+        "procedure_updated_last_year"
+      ],
+      "explanation": "The evidence provided indicates that a continuity planning procedure exists and was updated last year. However, the control description requires that the procedure be documented. The evidence field 'procedure_documented' is False, which directly contradicts the requirement for documentation as per the control CP1-1.",
+      "remediation": "Ensure that the continuity planning procedure is fully documented and accessible to relevant personnel. This documentation should include the roles and responsibilities, procedures, and contact information for key personnel.",
+      "confidence": "High"
+    },
+    "match": false
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {
+      "audit_record": "No documented Continuity Planning procedure found.",
+      "repository_record": "Continuity Planning procedure is missing from version control.",
+      "inventory": "Continuity Planning procedure not listed in IT asset inventory.",
+      "review_log": "Review of continuity planning procedures did not confirm existence."
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "audit_record",
+        "repository_record",
+        "inventory",
+        "review_log"
+      ],
+      "explanation": "The evidence from the audit record, repository record, inventory, and review log all indicate that the Continuity Planning procedure is not documented, missing from version control, not listed in the IT asset inventory, and not confirmed during the review. This directly contradicts the requirement of having a documented Continuity Planning procedure as per the control CP1-1.",
+      "remediation": "Develop and document a Continuity Planning procedure. Ensure it is included in version control and listed in the IT asset inventory. Conduct a thorough review to confirm its existence and implementation.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the organization has a documented Continuity Planning procedure. Without evidence, it is impossible to confirm or deny the implementation of the control.",
+      "remediation": "Obtain and review the organization's Continuity Planning documentation to verify compliance with CP1-1.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {
+      "iam_policy_exists": true,
+      "policy_documentation_found": false,
+      "access_control_schema_defined": true,
+      "access_control_policy_versioned": false
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "iam_policy_exists",
+        "policy_documentation_found",
+        "access_control_schema_defined",
+        "access_control_policy_versioned"
+      ],
+      "explanation": "While the evidence shows that an IAM policy exists and an access control schema is defined, the lack of policy documentation and versioning contradicts the control requirement that the access control schema is developed with proper documentation and versioning.",
+      "remediation": "Ensure that the IAM policy documentation is created and maintained. Implement a version control system for the access control policy to track changes and updates.",
+      "confidence": "High"
+    },
+    "match": false
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {
+      "contradicting_fact_1": "iam_policy_not_developed",
+      "contradicting_fact_2": "iam_policy_outdated",
+      "contradicting_fact_3": "iam_policy_not_enforced"
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "contradicting_fact_1",
+        "contradicting_fact_2",
+        "contradicting_fact_3"
+      ],
+      "explanation": "The evidence provided directly contradicts the cybersecurity control IAM1-1, which requires that an Identity and Access Management policy specifying the access control schema is developed. The evidence indicates that the IAM policy has not been developed ('iam_policy_not_developed'), is outdated ('iam_policy_outdated'), and is not enforced ('iam_policy_not_enforced').",
+      "remediation": "Develop a comprehensive IAM policy that outlines the access control schema, ensure it is kept up-to-date with the latest security standards, and implement mechanisms to enforce the policy consistently across the organization.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the IAM1-1 control is implemented. Without evidence, it is impossible to assess compliance with the control.",
+      "remediation": "Conduct an audit to review the organization's Identity and Access Management policies and procedures to ensure they are developed and documented according to the IAM1-1 control requirements.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {
+      "audit_record": "IncidentResponseProceduresExist",
+      "repository_path": "/security/irs",
+      "inventory_item": "CIS-Security-Incident-Response-Procedures",
+      "review_log_entry": "CIS-Security-Incident-Response-Procedures-Documented"
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "PASS",
+      "used_evidence": [
+        "audit_record",
+        "repository_path",
+        "inventory_item",
+        "review_log_entry"
+      ],
+      "explanation": "The evidence provided indicates that the CISP has documented CIS Security Incident Response procedures, which directly supports the implementation of the control IR1-1.",
+      "remediation": "",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {
+      "audit_record": "No documented CIS Security Incident Response procedures found.",
+      "repository_record": "CIS Security Incident Response procedures not included in the repository.",
+      "inventory": "CIS Security Incident Response procedures missing from the IT asset inventory.",
+      "review_log": "Audit team noted absence of documented CIS Security Incident Response procedures."
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "FAIL",
+      "used_evidence": [
+        "audit_record",
+        "repository_record",
+        "inventory",
+        "review_log"
+      ],
+      "explanation": "The evidence from the audit record, repository record, inventory, and review log all indicate that the CIS Security Incident Response procedures are not documented, included in the repository, or listed in the IT asset inventory. This directly contradicts the requirement of the control IR1-1, which mandates that the CISP has documented CIS Security Incident Response procedures.",
+      "remediation": "The CISP should immediately develop and document the CIS Security Incident Response procedures. These procedures should then be included in the repository and listed in the IT asset inventory. The audit team should be informed of the new procedures and their implementation.",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the CIS Security Incident Response procedures are documented as per the control IR1-1. To make a decision, evidence such as documentation, policy files, or records of training sessions would be required.",
+      "remediation": "Review and document the CIS Security Incident Response procedures. Ensure that the documentation is accessible and up-to-date. Conduct training sessions for relevant personnel to familiarize them with the procedures.",
+      "confidence": "Low"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {
+      "nato_classified_stored": "true",
+      "cis_supporting_housed": "true",
+      "compliant_with_reference": "reference_i"
+    },
+    "expected": "PASS",
+    "evaluation": {
+      "decision": "PASS",
+      "used_evidence": [
+        "nato_classified_stored",
+        "cis_supporting_housed",
+        "compliant_with_reference"
+      ],
+      "explanation": "The evidence provided indicates that NATO classified information is stored ('true') and CIS supporting services are housed ('true') in areas that are compliant with reference I ('reference_i'). This directly supports the implementation of the control PE1-1.",
+      "remediation": "",
+      "confidence": "High"
+    },
+    "match": true
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {
+      "audit_record": "NIST_SP800_53_rev4_AE1-1",
+      "repository_record": "CIS_RoleBasedAccessControl",
+      "inventory": "NIST_SP800_53_rev4_AE1-1",
+      "review_log": "NIST_SP800_53_rev4_AE1-1"
+    },
+    "expected": "FAIL",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [
+        "audit_record",
+        "repository_record",
+        "inventory",
+        "review_log"
+      ],
+      "explanation": "The evidence provided includes references to NIST SP800-53 rev4 AE1-1, which is a cybersecurity framework, and CIS Role-Based Access Control, which is a set of guidelines. However, there is no direct evidence provided that confirms compliance with the specific control PE1-1 regarding NATO classified information storage or processing areas and CIS supporting services. The evidence does not explicitly state whether the control is implemented or not.",
+      "remediation": "Conduct a detailed review of the areas where NATO classified information is stored or processed and areas housing CIS supporting services to ensure compliance with reference I or national equivalent to reference I. This review should include an examination of physical security measures, access controls, and information handling procedures.",
+      "confidence": "Medium"
+    },
+    "match": false
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN",
+    "evaluation": {
+      "decision": "UNKNOWN",
+      "used_evidence": [],
+      "explanation": "The evidence provided is empty, which means there is no information available to determine whether the control PE1-1 is implemented or not. To make a decision, evidence regarding the storage and processing of NATO classified information and CIS supporting services must be provided.",
+      "remediation": "Gather and review documentation, system configurations, and physical security measures related to the storage and processing of NATO classified information and CIS supporting services to ensure compliance with reference I or national equivalent to reference I.",
+      "confidence": "Low"
+    },
+    "match": true
+  }
+]
