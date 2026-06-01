@@ -1,0 +1,30 @@
+[
+  {
+    "id": "PHM1-1",
+    "description": "The CISP has documented Hardware and Media protection procedures"
+  },
+  {
+    "id": "PSW1-1",
+    "description": "The CISP has documented Software protection procedures"
+  },
+  {
+    "id": "CM1-1",
+    "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+  },
+  {
+    "id": "CP1-1",
+    "description": "The organisation has a documented Continuity Planning procedure"
+  },
+  {
+    "id": "IAM1-1",
+    "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+  },
+  {
+    "id": "IR1-1",
+    "description": "The CISP has a documented CIS Security Incident Response procedures"
+  },
+  {
+    "id": "PE1-1",
+    "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+  }
+]
