@@ -1,0 +1,237 @@
+[
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {
+      "hardware_protection": "documented",
+      "media_protection": "procedures_exist",
+      "audit_record": "present",
+      "repository_status": "updated"
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {
+      "audit_record": "missing_policy_documentation",
+      "repository_record": "incomplete_procedures",
+      "inventory": "unmarked_hardware_devices",
+      "review_log": "no_audit_of_media_protection"
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "PHM1-1",
+      "description": "The CISP has documented Hardware and Media protection procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {
+      "audit_record": "documented",
+      "repository_status": "active",
+      "inventory_count": "1",
+      "review_log_entry": "included"
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {
+      "contradict_control": false,
+      "missing_procedures": true,
+      "incomplete_documentation": true,
+      "outdated_policy": false
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "PSW1-1",
+      "description": "The CISP has documented Software protection procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {
+      "cm1_1": "Configuration_management_procedures_documented",
+      "emergency_changes_handled": true,
+      "change_request_process_exists": true
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {
+      "audit_record": "no_documentation_found",
+      "repository_record": "missing_config_management_procedures",
+      "inventory": "no_active_changes_handled",
+      "review_log": "emergency_changes_not_logged"
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "CM1-1",
+      "description": "The CISP has documented Configuration Management procedures including handling of emergency changes"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {
+      "continuity_planning_procedure_exists": true,
+      "procedure_documented": false,
+      "planning_frequency": "annually",
+      "procedure_updated_last_year": true
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {
+      "audit_record": "No documented Continuity Planning procedure found.",
+      "repository_record": "Continuity Planning procedure is missing from version control.",
+      "inventory": "Continuity Planning procedure not listed in IT asset inventory.",
+      "review_log": "Review of continuity planning procedures did not confirm existence."
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "CP1-1",
+      "description": "The organisation has a documented Continuity Planning procedure"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {
+      "iam_policy_exists": true,
+      "policy_documentation_found": false,
+      "access_control_schema_defined": true,
+      "access_control_policy_versioned": false
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {
+      "contradicting_fact_1": "iam_policy_not_developed",
+      "contradicting_fact_2": "iam_policy_outdated",
+      "contradicting_fact_3": "iam_policy_not_enforced"
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "IAM1-1",
+      "description": "An Identity and Access Management policy which specifies the access control schema is developed"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {
+      "audit_record": "IncidentResponseProceduresExist",
+      "repository_path": "/security/irs",
+      "inventory_item": "CIS-Security-Incident-Response-Procedures",
+      "review_log_entry": "CIS-Security-Incident-Response-Procedures-Documented"
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {
+      "audit_record": "No documented CIS Security Incident Response procedures found.",
+      "repository_record": "CIS Security Incident Response procedures not included in the repository.",
+      "inventory": "CIS Security Incident Response procedures missing from the IT asset inventory.",
+      "review_log": "Audit team noted absence of documented CIS Security Incident Response procedures."
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "IR1-1",
+      "description": "The CISP has a documented CIS Security Incident Response procedures"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {
+      "nato_classified_stored": "true",
+      "cis_supporting_housed": "true",
+      "compliant_with_reference": "reference_i"
+    },
+    "expected": "PASS"
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {
+      "audit_record": "NIST_SP800_53_rev4_AE1-1",
+      "repository_record": "CIS_RoleBasedAccessControl",
+      "inventory": "NIST_SP800_53_rev4_AE1-1",
+      "review_log": "NIST_SP800_53_rev4_AE1-1"
+    },
+    "expected": "FAIL"
+  },
+  {
+    "control": {
+      "id": "PE1-1",
+      "description": "Areas where NATO classified information is stored or processed, and areas housing CIS supporting services, are compliant with reference I or national equivalent to reference I"
+    },
+    "evidence": {},
+    "expected": "UNKNOWN"
+  }
+]
